@@ -1,0 +1,21 @@
+package day1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class sss {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		WebDriver driver=new FirefoxDriver();
+		driver.get("https://paytm.com/");
+		driver.manage().window().maximize();
+		
+		driver.findElement(By.xpath(".//*[@id='app']/div/div[2]/div[2]/div[3]/div[3]/div")).click();
+		
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package testNG;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeSuite;
+
+public class TestNGMAster
+{
+	public static String url="http://opensource.demo.orangehrmlive.com";
+	public static String u="Admin",p="admin";
+	public static WebDriver driver;
+	public static String expval,actval;
+	@BeforeSuite
+	public void launch()
+	{
+		
+	}
+}

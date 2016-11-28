@@ -1,0 +1,37 @@
+package xlOps;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelOps 
+{
+
+	public static void main(String[] args) throws IOException
+	{
+		String xlpath="F:\\Arzeena_Gowri\\Selenium\\src\\testdata\\EmpTestData.xlsx";
+		FileInputStream fi=new FileInputStream(xlpath);
+		
+		XSSFWorkbook wb=new XSSFWorkbook(fi);
+		XSSFSheet ws=wb.getSheet("Sheet1");
+		//Reading single cell data
+//		XSSFRow r=ws.getRow(1);
+//		XSSFCell c=r.getCell(0);
+//		System.out.println(c.getStringCellValue());
+		
+		//Multiple cell data 
+		
+		int rc=ws.getLastRowNum();
+		
+		for (int i = 0; i <= rc; i++) 
+		{
+			
+		}
+	}
+
+}

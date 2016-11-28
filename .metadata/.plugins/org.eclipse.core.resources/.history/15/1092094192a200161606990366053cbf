@@ -1,0 +1,20 @@
+package day2;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class GmailLogin {
+
+	public static void main(String[] args) 
+	{
+		WebDriver driver=new FirefoxDriver();
+		driver.get("http://gmail.com");
+		driver.manage().window().maximize();
+		//findElement()---
+		driver.findElement(By.id("Email")).sendKeys("gandesharath");
+		driver.findElement(By.id("Email")).clear();
+
+	}
+
+}
